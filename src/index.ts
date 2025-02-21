@@ -1,4 +1,6 @@
 import { DirectClient } from "@elizaos/client-direct";
+import { AppDataSource } from "./ormconfig.ts";
+import { Post } from "./entities/table.ts";
 import {
   AgentRuntime,
   elizaLogger,
@@ -171,6 +173,21 @@ const startAgents = async () => {
     chat();
   }
 };
+
+async function main() {
+  await AppDataSource.initialize();
+
+  const userRepository = AppDataSource.getRepository(Post);
+
+  // 🔹 Создать нового пользователя
+  const newUser = userRepository.create({ text: "Alice", rate: 10 });
+  await userRepository.save(newUser);
+  console.log("✅ User saved:", newUser);
+
+  // 🔹 Найти всех пользователей
+  const users = await userRepository.find();
+  console.log("📌 Users list:", users);
+}
 
 startAgents().catch((error) => {
   elizaLogger.error("Unhandled error in startAgents:", error);

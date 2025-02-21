@@ -1,7 +1,12 @@
 import { PostgresDatabaseAdapter } from "@elizaos/adapter-postgres";
 import { SqliteDatabaseAdapter } from "@elizaos/adapter-sqlite";
+import { AppDataSource } from "../ormconfig.ts";
+import { Post } from "../entities/table.ts";
 import Database from "better-sqlite3";
 import path from "path";
+
+const database = await AppDataSource.initialize();
+export {database};
 
 export function initializeDatabase(dataDir: string) {
   if (process.env.POSTGRES_URL) {

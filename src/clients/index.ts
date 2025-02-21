@@ -1,7 +1,7 @@
 import { AutoClientInterface } from "@elizaos/client-auto";
 import { DiscordClientInterface } from "@elizaos/client-discord";
 import { TelegramClientInterface } from "@elizaos/client-telegram";
-import { TwitterClientInterface } from "@elizaos/client-twitter";
+import { TwitterClientInterface } from "../plugins/client-twitter/src/index.ts";
 import { Character, IAgentRuntime } from "@elizaos/core";
 
 export async function initializeClients(
