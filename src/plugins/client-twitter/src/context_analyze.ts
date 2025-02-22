@@ -1,4 +1,5 @@
 import {openai} from "./openai.ts";
+import {logger} from "./logger.ts";
 
 const KEYWORDS = [
     "launch", "zkRollup", "Binance", "roadmap", "mainnet", "partnership", 
@@ -83,7 +84,7 @@ export async function calculateContextScore(tweet: string): Promise<number> {
     const embeddingFactor = await getEmbeddingFactor(tweet);
     const sentimentFactor = await getSentimentFactor(tweet);
 
-    console.log(`Keyword factor: ${keywordFactor}, Embedding factor: ${embeddingFactor}, Sentiment factor: ${sentimentFactor}`);
+    logger.info(`Keyword factor: ${keywordFactor}, Embedding factor: ${embeddingFactor}, Sentiment factor: ${sentimentFactor}`);
 
     const contextScore = (WEIGHT_KEYWORDS * keywordFactor) +
                          (WEIGHT_EMBEDDING * embeddingFactor) +

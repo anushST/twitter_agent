@@ -1,6 +1,7 @@
 import { Post } from "../../../entities/table.ts";
 import { database } from "../../../database/index.ts";
 import { calculateContextScore } from "./context_analyze.ts";
+import { logger } from "./logger.ts";
 
 export type PostData = {
     text: string;
@@ -103,7 +104,7 @@ export async function calculateRate(post: PostData): Promise<number> {
     const V = calculateVirality(post);
     const C = await calculateContextScore(post.text);
 
-    console.log(`V: ${V}, C: ${C}`);
+    logger.info(`V: ${V}, C: ${C}`);
 
     const TweetValueScore = (V * 40) + (C * 60);
 
