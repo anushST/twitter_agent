@@ -77,7 +77,7 @@ export class TwitterInteractionClient {
                             const userTweets = (
                                 await this.client.twitterClient.fetchSearchTweets(
                                     `from:${username}`,
-                                    10,
+                                    3,
                                     SearchMode.Latest
                                 )
                             ).tweets;

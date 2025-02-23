@@ -1,2 +1,24 @@
 2025-02-22T16:40:51.649Z [INFO]: [9:40:51 PM] Обрабатываем Twitter...
 2025-02-22T16:47:53.307Z [INFO]: [9:47:53 PM] Обрабатываем Twitter...
+2025-02-23T02:05:24.804Z [INFO]: [7:05:24 AM] Обрабатываем Twitter...
+2025-02-23T06:35:53.404Z [INFO]: [11:35:53 AM] Обрабатываем Twitter...
+2025-02-23T06:41:39.934Z [INFO]: [11:41:39 AM] Обрабатываем Twitter...
+2025-02-23T06:41:45.064Z [INFO]: Keyword factor: 0.6, Embedding factor: 0, Sentiment factor: 0.2
+2025-02-23T06:41:45.065Z [INFO]: V: 0.411, C: 0.22
+2025-02-23T06:41:47.401Z [INFO]: Keyword factor: 0, Embedding factor: 0.1, Sentiment factor: 0.4
+2025-02-23T06:41:47.402Z [INFO]: V: 0.345, C: 0.13
+2025-02-23T06:41:50.305Z [INFO]: Keyword factor: 0, Embedding factor: 0, Sentiment factor: 0.3
+2025-02-23T06:41:50.335Z [INFO]: V: 0.19, C: 0.06
+2025-02-23T06:41:54.628Z [INFO]: Keyword factor: 0, Embedding factor: 0, Sentiment factor: 0
+2025-02-23T06:41:54.629Z [INFO]: V: 0.252, C: 0
+2025-02-23T06:41:57.406Z [INFO]: Keyword factor: 0.8, Embedding factor: 0.7, Sentiment factor: 0.6
+2025-02-23T06:41:57.408Z [INFO]: V: 0.142, C: 0.71
+2025-02-23T06:42:00.117Z [INFO]: Keyword factor: 0.6, Embedding factor: 0.7, Sentiment factor: 0.3
+2025-02-23T06:42:00.119Z [INFO]: V: 0.027, C: 0.59
+2025-02-23T06:42:05.562Z [INFO]: Keyword factor: 0.8, Embedding factor: 1, Sentiment factor: 0.6
+2025-02-23T06:42:05.563Z [INFO]: V: 0.244, C: 0.86
+2025-02-23T06:42:09.307Z [INFO]: Keyword factor: 0.6, Embedding factor: 1, Sentiment factor: 0.2
+2025-02-23T06:42:09.312Z [INFO]: V: 0.106, C: 0.72
+2025-02-23T12:19:06.430Z [INFO]: [5:19:06 PM] Обрабатываем Twitter...
+2025-02-23T12:19:13.470Z [INFO]: Keyword factor: 0, Embedding factor: 0, Sentiment factor: 0.2
+2025-02-23T12:19:13.473Z [INFO]: V: 0.369, C: 0.04
